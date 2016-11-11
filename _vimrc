@@ -31,3 +31,5 @@ let g:airline_section_b = airline#section#create(['filetype'])
 let g:airline_section_c = airline#section#create(['%P'])
 let g:airline_theme = 'dark'
 
+hi ColorColumn ctermbg=235 guibg=#393939
+let &colorcolumn=join(range(121,999),",")
