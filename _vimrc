@@ -33,3 +33,13 @@ let g:airline_theme = 'dark'
 
 hi ColorColumn ctermbg=235 guibg=#393939
 let &colorcolumn=join(range(121,999),",")
+
+" Syntastic
+" git clone https://github.com/vim-syntastic/syntastic.git
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
